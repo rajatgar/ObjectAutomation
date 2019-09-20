@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="com.bpo.qa.testcases.CostPriceRateCardTest">
+        <methods>
+          <include name="verifyDuplicateButton"/>
+          <include name="verifyAddButton"/>
+          <include name="verifyEditButton"/>
+          <include name="tearDown"/>
+          <include name="verifyDeleteButton"/>
+          <include name="verifyRatesButton"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.bpo.qa.testcases.CostPriceRateCardTest -->
+      <class name="com.bpo.qa.testcases.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="LogoutTextTest"/>
+          <include name="tearDown"/>
+          <include name="SupportTextTest"/>
+          <include name="ProfileTextTest"/>
+        </methods>
+      </class> <!-- com.bpo.qa.testcases.HomePageTest -->
+      <class name="com.bpo.qa.testcases.Navigation_CostPriceRateCardTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="Navigate_CPRateCardScreen"/>
+        </methods>
+      </class> <!-- com.bpo.qa.testcases.Navigation_CostPriceRateCardTest -->
+      <class name="com.bpo.qa.testcases.CostPriceRateCardAddEditTest">
+        <methods>
+          <include name="verifyBasicTab"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.bpo.qa.testcases.CostPriceRateCardAddEditTest -->
+      <class name="com.bpo.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="loginPageTitleTest"/>
+          <include name="validateAscentOneImageTest"/>
+          <include name="setup"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.bpo.qa.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

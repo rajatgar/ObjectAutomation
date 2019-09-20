@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BPO Automation Test Suite">
+	<test name="BPO Automation Test">
+		<classes>
+			<class name="com.bpo.qa.testcases.HomePageTest"></class>
+			<class name="com.bpo.qa.testcases.LoginPageTest"></class>
+			<class name="com.bpo.qa.testcases.Navigation_CostPriceRateCardTest"></class>
+			<class name="com.bpo.qa.testcases.CostPriceRateCardTest"></class>
+			
+		</classes>
+	</test>
+</suite>
