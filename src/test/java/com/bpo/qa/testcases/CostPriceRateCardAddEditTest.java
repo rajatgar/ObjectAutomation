@@ -30,6 +30,7 @@ public class CostPriceRateCardAddEditTest extends TestBase{
 		Thread.sleep(10000);
 //		driver.get("http://oca-mel-test:8300/RateCardsMngt/Rate/AddEditRate.aspx?rateId=0&i=1&pn=Cost%20Price%20Rate%20Cards&j=414&prn=Easy%20Print%20Manager&cstPg=1&type=CP");
 		
+		System.out.println("Test");
 		
 		navigatecostprice = new Navigation_CostPriceRateCard();
 		navigatecostprice.validateclkEPMLink();
