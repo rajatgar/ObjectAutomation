@@ -6,6 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.bpo.qa.base.TestBase;
 
+import io.qameta.allure.Step;
+
 public class LoginPage extends TestBase{
 	
 	// Page Factory OR OR
@@ -32,17 +34,22 @@ public class LoginPage extends TestBase{
 	
 	// Initialize the method , Actions
 	
+	@Step("getting login page title...")
 	public String validateLoginPageTitle() throws InterruptedException{
 //		Thread.sleep(5000);
 		String abc=driver.getTitle();
 		return driver.getTitle();
 	}
 	
+	
+	@Step("verifying logo image...")
 	public boolean validateAscentOneImage(){
 	//	waitWebDriver(ascentONElogo);
 		return ascentONElogo.isDisplayed();
 	}
 	
+	
+	@Step("Login with username :{0} : and password {1} ")
 	public HomePage login(String un,String pwd){
 	//	waitWebDriver(username);
 		username.sendKeys(un);

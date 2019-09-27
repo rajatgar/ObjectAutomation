@@ -20,7 +20,7 @@ public class CostPriceRateCardAddEdit extends TestBase{
 	WebElement clkProviderCombo;
 	List<WebElement> selectValProviderCombo = driver.findElements(By.xpath("//ul[@id='ddlProvider_listbox']/li"));
 	
-	@FindBy(xpath="(//span[@class='k-dropdown-wrap k-state-default'])[3]")
+	@FindBy(xpath="(//span[@class='k-icon k-i-arrow-60-down'])[3]")
 	WebElement clkProviderProductCombo;
 	
 //	@FindBy(xpath="//*[@id='ddlProviderPrd_listbox']/li[1]")
@@ -36,6 +36,14 @@ public class CostPriceRateCardAddEdit extends TestBase{
 	@FindBy(xpath="//*[@id='dvBasicCost']/div[1]/div[4]/span[1]/span[1]/span[1]")
 	WebElement clkCurrencyCombo;
 	List<WebElement> selectValCurrencyCombo = driver.findElements(By.xpath("//*[@id='ddlCurrency_listbox']/li"));
+	
+	@FindBy(xpath="(//span[@class='k-dropdown-wrap k-state-default'])[4]")
+	WebElement clkTransportModeCombo;
+	List<WebElement> selectValTransportModeCombo = driver.findElements(By.xpath("//ul[@id='ddlTransportMode_listbox']/li"));
+	
+	@FindBy(xpath="(//span[@class='k-dropdown-wrap k-state-default'])[5]")
+	WebElement clkMyProductCombo;
+	List<WebElement> selectValMyProductCombo = driver.findElements(By.xpath("(//a[@class='noDataTemplate'])[2]"));
 
 	
 	public CostPriceRateCardAddEdit(){
@@ -66,6 +74,19 @@ public class CostPriceRateCardAddEdit extends TestBase{
 		clkCurrencyCombo.click();
 		testutil.getDropDowninnerhtml(selectValCurrencyCombo, "Afghanistan, Afghani (AFN)");
 		System.out.println("Currency");
+	}
+	
+	public void selectValTransportModeCombo() throws InterruptedException {
+		clkTransportModeCombo.click();
+		Thread.sleep(5000);
+		testutil.getDropDowninnerhtml(selectValTransportModeCombo, "Air");
+	}
+	
+	public void selectValMyProductCombo() throws InterruptedException{
+		clkMyProductCombo.click();
+		Thread.sleep(5000);
+		testutil.getDropDowninnerhtml(selectValMyProductCombo, "Add new");
+		
 	}
 
 }

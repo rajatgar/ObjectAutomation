@@ -49,9 +49,10 @@ public class CostPriceRateCardAddEditTest extends TestBase{
 		costpriceratecardaddedit.selectValProvider();
 		Thread.sleep(5000);
 		costpriceratecardaddedit.selectValProviderProduct();
-		
 		costpriceratecardaddedit.enterTextProviderCode();
 		costpriceratecardaddedit.selectValCurrencyCombo();
+		costpriceratecardaddedit.selectValTransportModeCombo();
+		costpriceratecardaddedit.selectValMyProductCombo();
 	}
 
 }

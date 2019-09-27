@@ -34,7 +34,7 @@ public class TestUtil extends TestBase{
 			Thread.sleep(2000);
 			if(Val1.equalsIgnoreCase(actVal)){
 				ele1.click();
-				System.out.println("donew");			
+		//		System.out.println("donew");			
 				return;
 			}
 	}
